@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Filters\ContactFilter;
 use App\Http\Requests\ContactRequest;
 use App\Http\Resources\Contact\ContactResource;
 use App\Models\Contact;

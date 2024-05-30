@@ -1,0 +1,166 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API docs",
+        "version": "1.1"
+    },
+    "paths": {
+        "/api/": {},
+        "/api/v1/notebook": {
+            "get": {
+                "tags": [
+                    "Contacts get all"
+                ],
+                "summary": "Index-view for contacts",
+                "operationId": "98a385c858c9e65529e2f1b7c8f3e33e",
+                "requestBody": {
+                    "content": {
+                        "none": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Contacts post"
+                ],
+                "summary": "Create new contact",
+                "operationId": "848c39a82e3ebf3243463cd7c815caa4",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "properties": {
+                                            "fio": {
+                                                "type": "string",
+                                                "example": "some name"
+                                            },
+                                            "company": {
+                                                "type": "string",
+                                                "example": "some company"
+                                            },
+                                            "phone_number": {
+                                                "type": "string",
+                                                "example": "+44 56-654-33"
+                                            },
+                                            "email": {
+                                                "type": "string",
+                                                "example": "some@email.doc"
+                                            },
+                                            "birth_date": {
+                                                "type": "string",
+                                                "example": "2002-01-09"
+                                            },
+                                            "photo": {
+                                                "type": "string",
+                                                "example": "D:/Images/photo_some_34.jpeg"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/notebook/5": {
+            "get": {
+                "tags": [
+                    "Contacts get contact"
+                ],
+                "summary": "Get contact by ID",
+                "operationId": "f19b6c77d773db4a072823ae2f679dee",
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Contacts delete contact"
+                ],
+                "summary": "Delete contact by ID",
+                "operationId": "4b853268087ccf425a6c5eaea7a30cc1",
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/notebook/5/edit": {
+            "post": {
+                "tags": [
+                    "Contacts patch"
+                ],
+                "summary": "Update contact",
+                "operationId": "4f0b84bacb930f67b01a55a884b20506",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "properties": {
+                                            "fio": {
+                                                "type": "string",
+                                                "example": "some 5 name"
+                                            },
+                                            "company": {
+                                                "type": "string",
+                                                "example": "some 5 company"
+                                            },
+                                            "phone_number": {
+                                                "type": "string",
+                                                "example": "+44 546-654-33"
+                                            },
+                                            "email": {
+                                                "type": "string",
+                                                "example": "some@email.doc"
+                                            },
+                                            "birth_date": {
+                                                "type": "string",
+                                                "example": "2002-01-09"
+                                            },
+                                            "photo": {
+                                                "type": "string",
+                                                "example": "D:/Images/photo_some_55.jpeg"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

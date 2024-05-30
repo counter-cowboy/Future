@@ -6,6 +6,8 @@ Username: sql8710509<br>
 Password: q5DW2YwPSX<br>
 Port number: 3306<br>
 
+##### Index page with pagination<br>
+{host:port}/api/v1/notebook<br>
 #### API methods:<br>
 GET {host:port}/api/v1/notebook<br>
 POST {host:port}/api/v1/notebook/<br>
