@@ -11,9 +11,9 @@ Port number: 3306<br>
 #### API methods:<br>
 GET {host:port}/api/v1/notebook<br>
 POST {host:port}/api/v1/notebook/<br>
-GET  {host:port}/api/v1/notebook/<id>/<br>
-POST {host:port}/api/v1/notebook/<id>/edit<br>
-DELETE {host:port}/api/v1/notebook/<id>/<br>
+GET  {host:port}/api/v1/notebook/{id}/<br>
+POST {host:port}/api/v1/notebook/{id}/edit<br>
+DELETE {host:port}/api/v1/notebook/{id}/<br>
 
 ##### DB_columns
 'fio'=> 'required|string'<br>
@@ -22,3 +22,6 @@ DELETE {host:port}/api/v1/notebook/<id>/<br>
 'email' => 'email|required'<br>
 'birth_date'=>'nullable|string'<br>
 'photo'=>'nullable|string'<br>
+
+##### Swagger docs
+{host:port}/api/documentation
