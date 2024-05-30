@@ -19,7 +19,7 @@ DELETE {host:port}/api/v1/notebook/{id}/<br>
 'fio'=> 'required|string'<br>
 'company'=>  'string|nullable'<br>
 'phone_number'=> 'string|required'<br>
-'email' => 'email|required'<br>
+'email' => 'string|email|required'<br>
 'birth_date'=>'nullable|string'<br>
 'photo'=>'nullable|string'<br>
 
